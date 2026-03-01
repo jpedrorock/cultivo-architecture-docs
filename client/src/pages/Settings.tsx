@@ -1,7 +1,7 @@
 import { NotificationSettings } from "@/components/NotificationSettings";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { AlertSettings } from "@/components/AlertSettings";
-import { ArrowLeft, Database, Keyboard, BookOpen, ChevronRight } from "lucide-react";
+import { Settings as SettingsIcon, Database, Keyboard, BookOpen, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,15 +11,25 @@ export default function Settings() {
   return (
     <PageTransition>
         <div className="min-h-screen bg-background">
-      {/* Header — sticky, compacto no mobile */}
+      {/* Header — padrão igual às outras páginas */}
       <header className="bg-card/80 backdrop-blur-sm border-b border-border sticky top-0 z-10">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center gap-3">
-            <Button asChild variant="ghost" size="icon" className="shrink-0 h-9 w-9 sm:h-10 sm:w-10">
-              <Link href="/">
-                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
-              </Link>
-            </Button>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 40,
+                height: 40,
+                borderRadius: 10,
+                background: "oklch(var(--primary) / 0.15)",
+                border: "1px solid oklch(var(--primary) / 0.2)",
+                flexShrink: 0,
+              }}
+            >
+              <SettingsIcon className="w-5 h-5 text-primary" />
+            </div>
             <div>
               <h1 className="text-lg sm:text-2xl font-bold text-foreground leading-tight">Configurações</h1>
               <p className="text-xs sm:text-sm text-muted-foreground">Personalize seu app</p>

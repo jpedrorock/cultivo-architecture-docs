@@ -3892,3 +3892,9 @@ Remover fase CLONING e adicionar botão "Tirar Clones" direto na MANUTENÇÃO
 - [x] seed.mjs já executa TRUNCATE em 31 tabelas antes de inserir (limpeza sempre ativa)
 - [x] Adicionado script "db:reset": "node seed.mjs" ao package.json como alias semântico
 - [x] Testado: pnpm db:reset limpa 31 tabelas e repopula com 84 logs, 37 templates, 8 plantas, etc.
+
+## Review de Design — Correções (01/03/2026)
+- [x] favicon.svg reescrito com Sprout branco sobre fundo verde #10b981
+- [x] apple-touch-icon.png gerado (180x180) com Sprout verde sobre fundo branco, igual ao icon-192.png
+- [x] Header da página Configurações padronizado: ícone SettingsIcon + título (mesmo padrão das demais páginas)
+- [x] Banner PWA redesenhado: chip discreto (260px) no canto inferior direito, fundo card/border, sem gradiente verde intrusivo

@@ -1,20 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Background circle -->
+  <!-- Background circle - green -->
   <circle cx="50" cy="50" r="50" fill="#10b981"/>
-  
-  <!-- Leaf icon (similar to lucide-react Leaf) -->
-  <g transform="translate(50, 50) scale(1.8)">
-    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 5.5c0 1.5-.5 3-1.5 4.5L22 15c.5.5.5 1 .5 1.5s-.5 1.5-1 2L19 21c-.5.5-1 1-1.5 1s-1-.5-1.5-1l-2.5-2.5C12 19.5 11.5 20 11 20Z" 
-          fill="none" 
-          stroke="#ffffff" 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"/>
-    <path d="M9.8 6.1C9 6 8 6 7 6c-2 0-4 1-5 3c0 2 1 4 3 5c1 .5 2 .5 3 .5" 
-          fill="none" 
-          stroke="#ffffff" 
-          stroke-width="2" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"/>
+
+  <!-- Sprout icon (lucide Sprout) centered and scaled -->
+  <!-- Original lucide viewBox: 0 0 24 24, centered at 12,12 -->
+  <!-- Translate to center 50,50 and scale to fit nicely -->
+  <g transform="translate(50,54) scale(2.6)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stem -->
+    <path d="M0 3 C0 3 0 -2 0 -8"/>
+    <!-- left leaf -->
+    <path d="M0 -4 C-2 -7 -6 -8 -8 -6 C-8 -2 -4 0 0 -4Z"/>
+    <!-- right leaf -->
+    <path d="M0 -7 C2 -10 6 -11 8 -9 C8 -5 4 -3 0 -7Z"/>
   </g>
 </svg>
