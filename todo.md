@@ -3898,3 +3898,13 @@ Remover fase CLONING e adicionar botão "Tirar Clones" direto na MANUTENÇÃO
 - [x] apple-touch-icon.png gerado (180x180) com Sprout verde sobre fundo branco, igual ao icon-192.png
 - [x] Header da página Configurações padronizado: ícone SettingsIcon + título (mesmo padrão das demais páginas)
 - [x] Banner PWA redesenhado: chip discreto (260px) no canto inferior direito, fundo card/border, sem gradiente verde intrusivo
+
+## Bug: Botão Configurar Alertas (Horário) — 01/03/2026
+- [ ] Investigar erro no botão de configurar alertas com horário na página AlertSettings
+- [ ] Corrigir o erro identificado
+
+## Bug: Switches de Alertas Bloqueados — 02/03/2026
+- [x] Causa raiz: `disabled={permission !== "granted"}` bloqueava o clique antes de chegar no handler
+- [x] Correção: removido `disabled` dos 3 Switches (Lembrete Diário, Alertas Automáticos, Lembretes de Tarefas)
+- [x] Handler já solicita permissão de notificação ao ativar — fluxo correto mantido
+- [x] Adicionado hint "Ao ativar, será solicitada permissão de notificação" abaixo de cada switch quando permissão não concedida

@@ -241,9 +241,13 @@ export default function AlertSettings() {
                   id="daily-reminder"
                   checked={config.dailyReminderEnabled}
                   onCheckedChange={handleToggleDailyReminder}
-                  disabled={permission !== "granted"}
                 />
               </div>
+              {permission !== "granted" && (
+                <p className="text-xs text-muted-foreground">
+                  Ao ativar, será solicitada permissão de notificação.
+                </p>
+              )}
 
               {config.dailyReminderEnabled && (
                 <div className="space-y-4 pl-4 border-l-2 border-primary/20">
@@ -349,9 +353,13 @@ export default function AlertSettings() {
                   id="alerts"
                   checked={config.alertsEnabled}
                   onCheckedChange={handleToggleAlerts}
-                  disabled={permission !== "granted"}
                 />
               </div>
+              {permission !== "granted" && (
+                <p className="text-xs text-muted-foreground">
+                  Ao ativar, será solicitada permissão de notificação.
+                </p>
+              )}
             </CardContent>
           </Card>
 
@@ -373,9 +381,13 @@ export default function AlertSettings() {
                   id="task-reminders"
                   checked={config.taskRemindersEnabled}
                   onCheckedChange={handleToggleTaskReminders}
-                  disabled={permission !== "granted"}
                 />
               </div>
+              {permission !== "granted" && (
+                <p className="text-xs text-muted-foreground">
+                  Ao ativar, será solicitada permissão de notificação.
+                </p>
+              )}
             </CardContent>
           </Card>
 
