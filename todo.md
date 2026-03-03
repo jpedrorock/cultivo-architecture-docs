@@ -3908,3 +3908,6 @@ Remover fase CLONING e adicionar botão "Tirar Clones" direto na MANUTENÇÃO
 - [x] Correção: removido `disabled` dos 3 Switches (Lembrete Diário, Alertas Automáticos, Lembretes de Tarefas)
 - [x] Handler já solicita permissão de notificação ao ativar — fluxo correto mantido
 - [x] Adicionado hint "Ao ativar, será solicitada permissão de notificação" abaixo de cada switch quando permissão não concedida
+
+## Ícones — Padronização 02/03/2026
+- [x] Padronizar todos os ícones usando o visual do apple-touch-icon (Sprout verde em fundo branco): favicon.svg, favicon.ico, favicon-32.png, favicon.png, icon-192.png, icon-512.png
